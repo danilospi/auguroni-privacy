@@ -49,7 +49,7 @@
 
 <section class="lang" id="it" lang="it">
   <h2>Informativa sulla privacy</h2>
-  <p class="muted">Ultimo aggiornamento: 16 ottobre 2026</p>
+  <p class="muted">Ultimo aggiornamento: 17 ottobre 2026</p>
   <p>Questa informativa descrive come l'app <strong>Auguroni</strong> (pacchetto <code>io.github.danilospi.buongiorno</code>), che crea immagini di buongiorno, buonanotte e auguri da mandare su WhatsApp, tratta i dati personali, ai sensi del Regolamento (UE) 2016/679 (GDPR).</p>
 
   <h3>1. Titolare del trattamento</h3>
@@ -59,7 +59,8 @@
   <ul>
     <li>Non serve creare un account e non chiediamo nome, email o altri dati personali.</li>
     <li>Le immagini vengono composte sul tuo telefono. Le mandi tu, con WhatsApp o un'altra app che scegli: Auguroni non le invia a nessuno.</li>
-    <li>Preferiti e impostazioni restano solo sul tuo telefono.</li>
+    <li>Preferiti e impostazioni restano sul tuo telefono.</li>
+    <li>Per migliorare l'app raccogliamo statistiche di utilizzo, senza nome né email (Firebase Analytics) e rapporti sugli arresti anomali (Firebase Crashlytics). Nei paesi SEE, nel Regno Unito, in Svizzera, a San Marino e in Vaticano (e quando il paese non si può stabilire) le statistiche partono solo se dai il consenso.</li>
     <li>L'app mostra pubblicità tramite Google AdMob. Gli annunci personalizzati vengono mostrati solo se dai il consenso.</li>
     <li>L'acquisto facoltativo "Togli la pubblicità" è gestito interamente da Google Play.</li>
   </ul>
@@ -67,19 +68,16 @@
   <h3>3. Dati salvati sul dispositivo</h3>
   <p>L'app salva sul telefono le immagini preferite (sfondo, scritta e frase), le impostazioni (avviso del mattino e orario, grandezza delle scritte), il numero di immagini inviate (serve a decidere quando mostrare un video pubblicitario) e una copia delle immagini e dei testi scaricati. Questi dati non lasciano il dispositivo, non sono accessibili allo sviluppatore e vengono cancellati disinstallando l'app o cancellandone i dati dalle impostazioni di Android.</p>
 
-  <h3>4. Nome dalla rubrica</h3>
-  <p>In "Personalizza" puoi scegliere un contatto dalla rubrica per scrivere il suo nome sull'immagine. L'app non chiede il permesso di leggere la rubrica: usa la finestra di scelta di Android e riceve solo il contatto che hai scelto, da cui prende il nome di battesimo. Il nome viene scritto sull'immagine e non viene inviato a nessuno.</p>
-
-  <h3>5. Ricerca a voce</h3>
+  <h3>4. Ricerca a voce</h3>
   <p>Se tocchi il microfono, la ricerca a voce usa il servizio di riconoscimento vocale del telefono (di solito quello di Google), che tratta l'audio secondo le proprie norme. Auguroni riceve solo il testo riconosciuto, usato per cercare le immagini, e non lo conserva.</p>
 
-  <h3>6. Immagini e testi scaricati</h3>
+  <h3>5. Immagini e testi scaricati</h3>
   <p>Gli sfondi, le frasi e il calendario delle feste vengono scaricati da un servizio di archiviazione di Cloudflare (Cloudflare, Inc.). Come ogni server web, il servizio riceve l'indirizzo IP del telefono e informazioni tecniche sulla richiesta, che usa per consegnare i file e per la sicurezza. Non inviamo a Cloudflare dati che ti identificano.</p>
 
-  <h3>7. Avviso del mattino</h3>
+  <h3>6. Avviso del mattino</h3>
   <p>L'avviso "Il buongiorno di oggi è pronto" è programmato e mostrato dal telefono stesso, senza passare da nessun server. Puoi disattivarlo o cambiarne l'orario nelle Impostazioni dell'app o in quelle di Android.</p>
 
-  <h3>8. Pubblicità (Google AdMob)</h3>
+  <h3>7. Pubblicità (Google AdMob)</h3>
   <p>L'app usa Google AdMob, fornito da Google Ireland Limited, per mostrare annunci nella galleria, un banner sotto l'immagine scelta e, ogni tanto, un video a schermo intero dopo un invio. Per mostrare e misurare gli annunci e prevenire le frodi, l'SDK di AdMob può raccogliere:</p>
   <ul>
     <li>l'ID pubblicità del dispositivo (Android Advertising ID);</li>
@@ -90,6 +88,20 @@
   <p>Al primo avvio, nei paesi dello Spazio economico europeo, nel Regno Unito e in Svizzera, l'app ti chiede il consenso tramite la piattaforma di consenso di Google (User Messaging Platform). Puoi cambiare scelta in ogni momento da Impostazioni → Privacy. Senza consenso vengono mostrati annunci non personalizzati o limitati.</p>
   <p>Google tratta questi dati come titolare autonomo. Per i dettagli: <a href="https://policies.google.com/technologies/partner-sites">Come Google utilizza i dati quando usi siti o app dei partner</a> e <a href="https://policies.google.com/privacy">Norme sulla privacy di Google</a>. Puoi anche reimpostare o eliminare l'ID pubblicità dalle impostazioni di Android.</p>
 
+  <h3>8. Statistiche di utilizzo e arresti anomali (Firebase)</h3>
+  <p>Per capire come viene usata l'app e migliorarla (la ricerca, le nuove immagini, l'aspetto), usiamo <strong>Firebase Analytics</strong> e <strong>Firebase Crashlytics</strong>, servizi forniti da Google Ireland Limited e Google LLC, che trattano i dati per nostro conto. Raccogliamo:</p>
+  <ul>
+    <li>le schermate che vedi e i tasti che tocchi (quale tasto e in quale schermata, senza le coordinate del tocco);</li>
+    <li>le immagini che apri e che mandi: sfondo, stile, soggetto, tipo di saluto, scrittura scelta e se è stato scritto un nome (mai il nome stesso);</li>
+    <li>le ricerche digitate nell'app: i nomi di persona vengono sostituiti con "[nome]", ma <strong>le ricerche possono contenere parole digitate dall'utente</strong>;</li>
+    <li>le impostazioni scelte: orario e stato dell'avviso del mattino, grandezza delle scritte, se hai acquistato "Togli la pubblicità";</li>
+    <li>se l'app è stata aperta dall'avviso del mattino e quando viene mostrato un video pubblicitario;</li>
+    <li>dati tecnici del dispositivo e dell'app (modello, versione di Android, lingua, versione dell'app) e un identificativo casuale dell'installazione, che non ti identifica.</li>
+  </ul>
+  <p><strong>Consenso.</strong> Nei paesi dello Spazio economico europeo, nel Regno Unito, in Svizzera, a San Marino e in Vaticano le statistiche partono solo se dai il consenso nel modulo che appare al primo avvio (finalità "archiviare o accedere a informazioni su un dispositivo" e "misurare le prestazioni dei contenuti"); senza consenso restano completamente spente. Puoi cambiare scelta in ogni momento da Impostazioni → Privacy. Lo stesso vale quando il paese non si può stabilire (dalla SIM, dalla rete mobile o dalla lingua del telefono): senza consenso le statistiche non vengono raccolte. Negli altri paesi il modulo non viene mostrato e le statistiche sono raccolte.</p>
+  <p><strong>Arresti anomali.</strong> Quando l'app si blocca, Crashlytics riceve un rapporto tecnico (modello del dispositivo, versione di Android, traccia dell'errore, stato dell'app). È sempre attivo, perché serve a far funzionare l'app (legittimo interesse), e non contiene nessun dato che ti identifichi.</p>
+  <p><strong>Uso e conservazione.</strong> I dati servono solo a migliorare l'app; non creiamo profili pubblicitari con Analytics (l'uso dell'ID pubblicità e la personalizzazione degli annunci sono disattivati per Analytics). Le statistiche sono conservate per 14 mesi, poi cancellate automaticamente. Per i dettagli: <a href="https://firebase.google.com/support/privacy">Privacy e sicurezza in Firebase</a>.</p>
+
   <h3>9. Acquisto "Togli la pubblicità" (Google Play)</h3>
   <p>L'acquisto facoltativo avviene tramite Google Play. Il pagamento e i relativi dati sono gestiti da Google secondo le proprie norme; l'app riceve solo la conferma che l'acquisto è stato effettuato, per smettere di mostrare la pubblicità.</p>
 
@@ -99,12 +111,14 @@
     <tr><td>Funzionamento dell'app (dati sul dispositivo, contenuti scaricati, avviso del mattino)</td><td>Esecuzione del servizio richiesto (art. 6.1.b GDPR)</td></tr>
     <tr><td>Annunci personalizzati</td><td>Consenso (art. 6.1.a GDPR), revocabile in ogni momento</td></tr>
     <tr><td>Annunci non personalizzati, prevenzione delle frodi</td><td>Legittimo interesse a finanziare l'app gratuita (art. 6.1.f GDPR)</td></tr>
+    <tr><td>Statistiche di utilizzo (Firebase Analytics)</td><td>Consenso (art. 6.1.a GDPR), revocabile da Impostazioni → Privacy</td></tr>
+    <tr><td>Arresti anomali (Crashlytics)</td><td>Legittimo interesse a mantenere l'app funzionante (art. 6.1.f GDPR)</td></tr>
     <tr><td>Acquisto "Togli la pubblicità"</td><td>Esecuzione del contratto (art. 6.1.b GDPR)</td></tr>
   </table>
 
   <h3>11. Autorizzazioni dell'app</h3>
   <ul>
-    <li><strong>Internet e stato della rete</strong>: per scaricare immagini e testi, caricare gli annunci e verificare gli acquisti.</li>
+    <li><strong>Internet e stato della rete</strong>: per scaricare immagini e testi, caricare gli annunci, inviare statistiche e rapporti sugli arresti anomali e verificare gli acquisti.</li>
     <li><strong>Notifiche</strong>: per l'avviso del mattino (puoi rifiutarlo).</li>
     <li><strong>Avvio del telefono</strong>: per riprogrammare l'avviso del mattino dopo un riavvio.</li>
     <li><strong>ID pubblicità</strong>: usato da AdMob come descritto sopra.</li>
@@ -112,13 +126,13 @@
   </ul>
 
   <h3>12. Trasferimenti fuori dall'UE</h3>
-  <p>Google e Cloudflare possono trattare i dati anche fuori dallo Spazio economico europeo, con le garanzie previste dal GDPR (clausole contrattuali standard e EU-U.S. Data Privacy Framework).</p>
+  <p>Google (anche tramite Firebase) e Cloudflare possono trattare i dati anche fuori dallo Spazio economico europeo, con le garanzie previste dal GDPR (clausole contrattuali standard e EU-U.S. Data Privacy Framework).</p>
 
   <h3>13. Minori</h3>
   <p>Auguroni è pensata per adulti, non è destinata ai minori di 13 anni e non raccoglie consapevolmente dati di minori di questa età.</p>
 
   <h3>14. I tuoi diritti</h3>
-  <p>Hai diritto di accesso, rettifica, cancellazione, limitazione, opposizione e portabilità dei dati, e di revocare il consenso in qualsiasi momento. Poiché lo sviluppatore non conserva dati personali, per i dati trattati da Google puoi rivolgerti direttamente a Google. Per qualsiasi domanda scrivi a <a href="mailto:ds97app@gmail.com">ds97app@gmail.com</a>. Hai inoltre il diritto di proporre reclamo al <a href="https://www.garanteprivacy.it">Garante per la protezione dei dati personali</a>.</p>
+  <p>Hai diritto di accesso, rettifica, cancellazione, limitazione, opposizione e portabilità dei dati, e di revocare il consenso in qualsiasi momento. Le statistiche non contengono il tuo nome né la tua email e non ci permettono di identificarti; per i dati trattati da Google puoi rivolgerti direttamente a Google. Per qualsiasi domanda scrivi a <a href="mailto:ds97app@gmail.com">ds97app@gmail.com</a>. Hai inoltre il diritto di proporre reclamo al <a href="https://www.garanteprivacy.it">Garante per la protezione dei dati personali</a>.</p>
 
   <h3>15. Modifiche</h3>
   <p>Eventuali modifiche a questa informativa saranno pubblicate su questa pagina, con la data di aggiornamento.</p>
@@ -126,7 +140,7 @@
 
 <section class="lang" id="en" lang="en">
   <h2>Privacy Policy</h2>
-  <p class="muted">Last updated: October 16, 2026</p>
+  <p class="muted">Last updated: October 17, 2026</p>
   <p>This policy describes how the <strong>Auguroni</strong> Android app (package <code>io.github.danilospi.buongiorno</code>), which creates good-morning, good-night and greeting images to share on WhatsApp, processes personal data under Regulation (EU) 2016/679 (GDPR).</p>
 
   <h3>1. Data controller</h3>
@@ -136,7 +150,8 @@
   <ul>
     <li>No account is needed and we do not ask for your name, email or any other personal data.</li>
     <li>Images are composed on your phone. You send them yourself, with WhatsApp or another app you choose: Auguroni does not send them to anyone.</li>
-    <li>Favourites and settings stay on your phone only.</li>
+    <li>Favourites and settings stay on your phone.</li>
+    <li>To improve the app we collect usage statistics, without your name or email (Firebase Analytics) and crash reports (Firebase Crashlytics). In the EEA, the UK, Switzerland, San Marino and Vatican City (and when the country cannot be determined), statistics start only if you give consent.</li>
     <li>The app shows ads through Google AdMob. Personalised ads are shown only with your consent.</li>
     <li>The optional "Remove ads" purchase is handled entirely by Google Play.</li>
   </ul>
@@ -144,22 +159,33 @@
   <h3>3. Data stored on the device</h3>
   <p>The app stores on the phone your favourite images (background, title and phrase), your settings (morning reminder and its time, text size), the number of images sent (used to decide when to show a video ad) and a copy of the downloaded images and texts. This data never leaves the device, is not accessible to the developer and is deleted when you uninstall the app or clear its data from Android settings.</p>
 
-  <h3>4. Name from your contacts</h3>
-  <p>In "Personalizza" you can pick a contact to write their name on the image. The app does not ask for permission to read your contacts: it uses Android's contact picker and receives only the contact you chose, from which it takes the first name. The name is written on the image and is not sent anywhere.</p>
-
-  <h3>5. Voice search</h3>
+  <h3>4. Voice search</h3>
   <p>If you tap the microphone, voice search uses the phone's speech recognition service (usually Google's), which processes the audio under its own policies. Auguroni only receives the recognised text, uses it to search images and does not keep it.</p>
 
-  <h3>6. Downloaded images and texts</h3>
+  <h3>5. Downloaded images and texts</h3>
   <p>Backgrounds, phrases and the holiday calendar are downloaded from a Cloudflare, Inc. storage service. Like any web server, it receives the phone's IP address and technical information about the request, used to deliver the files and for security. We do not send Cloudflare any data that identifies you.</p>
 
-  <h3>7. Morning reminder</h3>
+  <h3>6. Morning reminder</h3>
   <p>The "today's good morning is ready" reminder is scheduled and shown by the phone itself, without any server. You can turn it off or change its time in the app settings or in Android settings.</p>
 
-  <h3>8. Advertising (Google AdMob)</h3>
+  <h3>7. Advertising (Google AdMob)</h3>
   <p>The app uses Google AdMob, provided by Google Ireland Limited, to show ads in the gallery, a banner under the chosen image and, from time to time, a full-screen video after sending an image. To serve and measure ads and prevent fraud, the AdMob SDK may collect the device advertising ID, the IP address and approximate location derived from it, device and OS information (model, language, version), ad interaction data (views, taps) and diagnostics.</p>
   <p>On first launch, in the European Economic Area, the United Kingdom and Switzerland, the app asks for your consent through Google's User Messaging Platform. You can change your choice at any time from Settings → Privacy. Without consent, non-personalised or limited ads are shown.</p>
   <p>Google processes this data as an independent controller. Details: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. You can also reset or delete the advertising ID in Android settings.</p>
+
+  <h3>8. Usage statistics and crash reports (Firebase)</h3>
+  <p>To understand how the app is used and to improve it (search, new images, interface), we use <strong>Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong>, services provided by Google Ireland Limited and Google LLC, which process the data on our behalf. We collect:</p>
+  <ul>
+    <li>the screens you view and the buttons you tap (which button and on which screen, without touch coordinates);</li>
+    <li>the images you open and send: background, style, subject, type of greeting, font chosen and whether a name was written (never the name itself);</li>
+    <li>searches typed in the app: people's first names are replaced with "[nome]", but <strong>searches may contain words typed by the user</strong>;</li>
+    <li>the settings you chose: reminder time and on/off state, text size, whether you bought "Remove ads";</li>
+    <li>whether the app was opened from the morning reminder and when a video ad is shown;</li>
+    <li>technical device and app data (model, Android version, language, app version) and a random installation identifier, which does not identify you.</li>
+  </ul>
+  <p><strong>Consent.</strong> In the European Economic Area, the United Kingdom, Switzerland, San Marino and Vatican City, statistics start only if you give consent in the form shown at first launch (purposes "store and/or access information on a device" and "measure content performance"); without consent they stay completely off. You can change your choice at any time from Settings → Privacy. The same applies when the country cannot be determined (from the SIM, the mobile network or the phone's language): without consent no statistics are collected. In other countries the form is not shown and statistics are collected.</p>
+  <p><strong>Crash reports.</strong> When the app crashes, Crashlytics receives a technical report (device model, Android version, stack trace, app state). It is always on, because it is needed to keep the app working (legitimate interest), and contains no data that identifies you.</p>
+  <p><strong>Use and retention.</strong> The data is used only to improve the app; we do not build advertising profiles with Analytics (use of the advertising ID and ad personalisation are disabled for Analytics). Statistics are kept for 14 months and then deleted automatically. Details: <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</p>
 
   <h3>9. "Remove ads" purchase (Google Play)</h3>
   <p>The optional purchase is made through Google Play. Payment and related data are handled by Google under its own policies; the app only receives the confirmation that the purchase was made, so it can stop showing ads.</p>
@@ -170,12 +196,14 @@
     <tr><td>Running the app (on-device data, downloaded content, morning reminder)</td><td>Performance of the requested service (Art. 6.1.b GDPR)</td></tr>
     <tr><td>Personalised ads</td><td>Consent (Art. 6.1.a GDPR), revocable at any time</td></tr>
     <tr><td>Non-personalised ads, fraud prevention</td><td>Legitimate interest in funding the free app (Art. 6.1.f GDPR)</td></tr>
+    <tr><td>Usage statistics (Firebase Analytics)</td><td>Consent (Art. 6.1.a GDPR), revocable from Settings → Privacy</td></tr>
+    <tr><td>Crash reports (Crashlytics)</td><td>Legitimate interest in keeping the app working (Art. 6.1.f GDPR)</td></tr>
     <tr><td>"Remove ads" purchase</td><td>Performance of the contract (Art. 6.1.b GDPR)</td></tr>
   </table>
 
   <h3>11. App permissions</h3>
   <ul>
-    <li><strong>Internet and network state</strong>: to download images and texts, load ads and verify purchases.</li>
+    <li><strong>Internet and network state</strong>: to download images and texts, load ads, send statistics and crash reports and verify purchases.</li>
     <li><strong>Notifications</strong>: for the morning reminder (you can refuse it).</li>
     <li><strong>Run at startup</strong>: to reschedule the morning reminder after a restart.</li>
     <li><strong>Advertising ID</strong>: used by AdMob as described above.</li>
@@ -183,13 +211,13 @@
   </ul>
 
   <h3>12. Transfers outside the EU</h3>
-  <p>Google and Cloudflare may process data outside the European Economic Area, with the safeguards required by the GDPR (standard contractual clauses and the EU-U.S. Data Privacy Framework).</p>
+  <p>Google (including through Firebase) and Cloudflare may process data outside the European Economic Area, with the safeguards required by the GDPR (standard contractual clauses and the EU-U.S. Data Privacy Framework).</p>
 
   <h3>13. Children</h3>
   <p>Auguroni is meant for adults, is not directed at children under 13 and does not knowingly collect data from children of that age.</p>
 
   <h3>14. Your rights</h3>
-  <p>You have the right to access, rectify, erase, restrict, object to and port your data, and to withdraw consent at any time. Since the developer keeps no personal data, for data processed by Google you can contact Google directly. For any question write to <a href="mailto:ds97app@gmail.com">ds97app@gmail.com</a>. You may also lodge a complaint with the Italian data protection authority (<a href="https://www.garanteprivacy.it">Garante per la protezione dei dati personali</a>).</p>
+  <p>You have the right to access, rectify, erase, restrict, object to and port your data, and to withdraw consent at any time. The statistics contain neither your name nor your email and do not let us identify you; for data processed by Google you can contact Google directly. For any question write to <a href="mailto:ds97app@gmail.com">ds97app@gmail.com</a>. You may also lodge a complaint with the Italian data protection authority (<a href="https://www.garanteprivacy.it">Garante per la protezione dei dati personali</a>).</p>
 
   <h3>15. Changes</h3>
   <p>Any changes to this policy will be published on this page with the update date.</p>
